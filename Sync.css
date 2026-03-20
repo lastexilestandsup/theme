@@ -1,2 +1,6 @@
-body {
-  background: red !important;
+:root {
+  --background-primary: red !important;
+}
+html, body {
+  background-color: red !important;
+}
