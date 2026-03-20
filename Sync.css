@@ -1,6 +1,62 @@
+/* ===============================
+   Variable Overrides (foundation)
+   =============================== */
 :root {
-  --background-primary: red !important;
+    --background-primary: #09180C !important;   /* main background */
+    --background-secondary: #09180C !important; /* panels, sidebars */
+    --background-tertiary: #09180C !important;  /* chat background */
+    --text-normal: #978872 !important;          /* main text */
+    --text-muted: #978872 !important;           /* secondary text */
+    --font-primary: 'Fliege Mono', monospace !important;
 }
-html, body {
-  background-color: red !important;
+
+/* ===============================
+   Global Overrides
+   =============================== */
+*, *::before, *::after {
+    font-family: 'Fliege Mono', monospace !important;
+    color: #978872 !important;
+}
+
+/* ===============================
+   Core UI Panels
+   =============================== */
+html, body, #app-mount, #app-mount > div, #app-mount > div > div, #app-mount > div > div > div {
+    background-color: #09180C !important;
+}
+
+/* ===============================
+   Containers, chat, content, sidebars
+   =============================== */
+[class*="container"],
+[class*="scroller"],
+[class*="layout"],
+[class*="chat"],
+[class*="content"],
+[class*="sidebar"] {
+    background-color: #09180C !important;
+    color: #978872 !important;
+}
+
+/* ===============================
+   Inputs, textareas, buttons, selects
+   =============================== */
+input, textarea, button, select {
+    background-color: #09180C !important;
+    color: #978872 !important;
+    font-family: 'Fliege Mono', monospace !important;
+    border-color: #978872 !important;
+}
+
+/* ===============================
+   Scrollbars
+   =============================== */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #09180C !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #978872 !important;
+    border-radius: 5px;
 }
