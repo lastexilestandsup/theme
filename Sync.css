@@ -1,62 +1,23 @@
-/* ===============================
-   Variable Overrides (foundation)
-   =============================== */
-:root {
-    --background-primary: #09180C !important;   /* main background */
-    --background-secondary: #09180C !important; /* panels, sidebars */
-    --background-tertiary: #09180C !important;  /* chat background */
-    --text-normal: #978872 !important;          /* main text */
-    --text-muted: #978872 !important;           /* secondary text */
-    --font-primary: 'Fliege Mono', monospace !important;
-}
-
-/* ===============================
-   Global Overrides
-   =============================== */
-*, *::before, *::after {
-    font-family: 'Fliege Mono', monospace !important;
-    color: #978872 !important;
-}
-
-/* ===============================
-   Core UI Panels
-   =============================== */
+/* Main UI panels */
 html, body, #app-mount, #app-mount > div, #app-mount > div > div, #app-mount > div > div > div {
-    background-color: #09180C !important;
+  background-color: #09180C !important; /* your dark theme background */
 }
 
-/* ===============================
-   Containers, chat, content, sidebars
-   =============================== */
-[class*="container"],
-[class*="scroller"],
-[class*="layout"],
-[class*="chat"],
-[class*="content"],
-[class*="sidebar"] {
-    background-color: #09180C !important;
-    color: #978872 !important;
+/* Sidebars, chat panels, containers */
+[class*="container"], [class*="scroller"], [class*="layout"], [class*="chat"], [class*="content"], [class*="sidebar"] {
+  background-color: #09180C !important;
 }
 
-/* ===============================
-   Inputs, textareas, buttons, selects
-   =============================== */
+/* Text globally */
+*, *::before, *::after {
+  color: #978872 !important; /* your text color */
+  font-family: 'Fliege Mono', monospace !important;
+}
+
+/* Inputs, buttons */
 input, textarea, button, select {
-    background-color: #09180C !important;
-    color: #978872 !important;
-    font-family: 'Fliege Mono', monospace !important;
-    border-color: #978872 !important;
-}
-
-/* ===============================
-   Scrollbars
-   =============================== */
-::-webkit-scrollbar {
-    width: 10px;
-    background: #09180C !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #978872 !important;
-    border-radius: 5px;
+  background-color: #09180C !important;
+  color: #978872 !important;
+  font-family: 'Fliege Mono', monospace !important;
+  border-color: #978872 !important;
 }
