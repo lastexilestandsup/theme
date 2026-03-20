@@ -1,23 +1,22 @@
-/* Main UI panels */
-html, body, #app-mount, #app-mount > div, #app-mount > div > div, #app-mount > div > div > div {
-  background-color: #09180C !important; /* your dark theme background */
-}
-
-/* Sidebars, chat panels, containers */
-[class*="container"], [class*="scroller"], [class*="layout"], [class*="chat"], [class*="content"], [class*="sidebar"] {
-  background-color: #09180C !important;
-}
-
-/* Text globally */
+ /* Text globally */
 *, *::before, *::after {
-  color: #978872 !important; /* your text color */
+  color: #978872 !important;
   font-family: 'Fliege Mono', monospace !important;
+}
+
+/* Main background panels only */
+[class*="app-"], 
+[class*="container-"], 
+[class*="scroller-"], 
+[class*="sidebar-"], 
+[class*="chat-"], 
+[class*="content-"] {
+  background-color: #09180C !important;
 }
 
 /* Inputs, buttons */
 input, textarea, button, select {
   background-color: #09180C !important;
   color: #978872 !important;
-  font-family: 'Fliege Mono', monospace !important;
   border-color: #978872 !important;
 }
