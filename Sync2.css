@@ -1,0 +1,63 @@
+/* ===============================
+   Import base Midnight (optional)
+   =============================== */
+/* Uncomment this line if you want Midnight base as fallback */
+/* @import url("https://refact0r.github.io/midnight-discord/build/midnight.css"); */
+
+/* ===============================
+   Variables / Theme Colors
+   =============================== */
+:root {
+  --bg-4: #09180C !important;   /* main background */
+  --bg-3: #09180C !important;   /* panels / secondary */
+  --bg-2: #09180C !important;   /* chat containers */
+  --text-1: #978872 !important; /* primary text */
+  --text-2: #978872 !important; /* secondary text */
+  --accent-1: #978872 !important; /* accent color (hover, mentions) */
+  --font: 'Fliege Mono', monospace !important;
+  --code-font: 'Fliege Mono', monospace !important;
+}
+
+/* ===============================
+   Global Text / Pseudo-elements
+   =============================== */
+*, *::before, *::after {
+  color: var(--text-1) !important;
+  font-family: var(--font) !important;
+}
+
+/* ===============================
+   Panels, Containers, Chat
+   =============================== */
+[class*="container"],
+[class*="scroller"],
+[class*="layout"],
+[class*="chat"],
+[class*="content"],
+[class*="sidebar"] {
+  background-color: var(--bg-4) !important;
+  color: var(--text-1) !important;
+}
+
+/* ===============================
+   Inputs, Buttons, Textareas, Selects
+   =============================== */
+input, textarea, button, select {
+  background-color: var(--bg-3) !important;
+  color: var(--text-1) !important;
+  border-color: var(--text-1) !important;
+  font-family: var(--font) !important;
+}
+
+/* ===============================
+   Scrollbars
+   =============================== */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--bg-4) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-1) !important;
+  border-radius: 5px;
+}
