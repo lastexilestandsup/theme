@@ -1,22 +1,22 @@
- /* Text globally */
-*, *::before, *::after {
-  color: #978872 !important;
-  font-family: 'Fliege Mono', monospace !important;
+@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
+
+/* === Your Overrides === */
+body {
+  /* fonts */
+  --font: 'Fliege Mono', monospace !important;
+  --code-font: 'Fliege Mono', monospace !important;
+
+  /* primary backgrounds */
+  --bg-4: #09180C !important;    /* main background */
+  --bg-3: #09180C !important;    /* secondary panels */
+
+  /* text colors */
+  --text-1: #978872 !important;
+  --text-2: #978872 !important;
+  --text-3: #978872 !important;
 }
 
-/* Main background panels only */
-[class*="app-"], 
-[class*="container-"], 
-[class*="scroller-"], 
-[class*="sidebar-"], 
-[class*="chat-"], 
-[class*="content-"] {
-  background-color: #09180C !important;
-}
-
-/* Inputs, buttons */
-input, textarea, button, select {
-  background-color: #09180C !important;
-  color: #978872 !important;
-  border-color: #978872 !important;
+/* Optional: tweak accent colors if needed */
+:root {
+  --accent-1: #978872 !important; /* general accent */
 }
